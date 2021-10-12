@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="dist/css/style.min.css">
     <link rel="stylesheet" href="dist/css/responsive.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .title,
         .product {
@@ -27,12 +30,12 @@
             <nav class="nav">
                 <div>
                     <a href="/">
-                    <img src="dist/images/logo.png" width="100" alt="">
+                        <img src="dist/images/logo.png" id="logo" width="100" alt="">
                     </a>
 
                 </div>
                 <div style="margin-left: auto;">
-                    <a href="#" class="buy-now">BUY NOW</a>
+                    <a href="buy-now.html" class="buy-now">BUY NOW</a>
                     <button class="toggle-menu">
                         <span></span>
                     </button>
@@ -44,18 +47,18 @@
             <nav class="main-nav">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="buy-now.html">
                             Buy Now
                         </a>
                     </li>
                     <li>
-                        <a href="index.html" class="nav-active">
+                        <a href="index.html">
                             Home
                         </a>
                     </li>
 
                     <li>
-                        <a href="#">
+                        <a href="what-are-pretzels.html">
                             What Are Pretzels?
                         </a>
                     </li>
@@ -87,12 +90,12 @@
                                 Facebook
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#">
                                 <i class="fa fa-envelope fa-fw"></i>
                                 Subscribe
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
             </footer>
@@ -101,38 +104,128 @@
 
     <div id="fullpage">
         <div class="section" id="cheese_herbs">
-            <div data-anchor="cheese_and_herbs" class="title aos-init"> <img src="dist/images/cheese_herbs/Title.png"
-                    alt="">
-                <div class="buy-wrapper">
-                    <a href="#" class="buy-now">BUY NOW</a>
+            <div data-anchor="cheese_and_herbs" class="title aos-init">
+                <img src="dist/images/cheese_herbs/Title.png" class="mob-hide" alt="">
+                <img src="dist/images/cheese_herbs/title-phone.png" class="mob-only" alt="">
+                <div class="buy-wrapper mob-hide">
+                    <div class="buy-title">
+                        <a href="#cheese_herbs_popup" class="buy-now popup-btn">BUY NOW</a>
+                    </div>
+                    <div id="cheese_herbs_popup" class="mfp-hide popup">
+                        <p>
+                            Now Available At
+                        </p>
+                        <div class="links">
+                            <a target="_blank" rel="no-referrer" href="https://www.amazon.in/dp/B099N6SYX4?ref=myi_title_dp "><img src="./dist/images/am-icon.svg" style="margin-top: 1rem;"
+                                    alt="" srcset=""></a>
+                            <a target="_blank" rel="no-referrer" href="https://www.flipkart.com/snack-terminal-cheese-pretzel/p/itme72dd0262f230?pid=SNSG6WUV7KND6QQF "><img src="./dist/images/flipkart.png" alt="" srcset=""></a>
+                            <a target="_blank" rel="no-referrer" href="https://propshop24.com/products/pretzels-cheese-and-herbs-100g-single-piece"><img src="./dist/images/propshop.webp" alt="" srcset=""></a>
+                            <a target="_blank" rel="no-referrer" href=" https://yourhomefactory.com/product/pretzels-cheese-and-herbs/"><img src="./dist/images/yhf.webp" style="filter:invert(1);"
+                                    alt="" srcset=""></a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
             <div class="product"><img src="dist/images/cheese_herbs/product.png" alt=""></div>
+            <div class="buy-wrapper mob-only">
+                <div class="buy-title">
+                    <a href="#cheese_herbs_popup" class="buy-now popup-btn">BUY NOW</a>
+                </div>
+            </div>
+
         </div>
         <div class="section" id="choco_dipped">
-            <div class="title"> <img src="dist/images/choco_dipped/title.png" alt="">
-                <div class="buy-wrapper">
-                    <a href="#" class="buy-now">BUY NOW</a>
+            <div class="title">
+                <img src="dist/images/choco_dipped/title.png" class="mob-hide" alt="">
+                <img src="dist/images/choco_dipped/title-phone.png" class="mob-only" alt="">
+                <div class="buy-wrapper mob-hide">
+                    <div class="buy-title">
+                        <a href="#choco_dipped_popup" class="buy-now popup-btn">BUY NOW</a>
+                    </div>
+                    <div id="choco_dipped_popup" class="mfp-hide popup">
+                        <p>
+                            Now Available At
+                        </p>
+                        <div class="links">
+
+                            <a target="_blank" rel="no-referrer" href="https://www.amazon.in/dp/B099NGTQ5V?ref=myi_title_dphttps://www.amazon.in/dp/B099N6SYX4?ref=myi_title_dp"><img src="./dist/images/am-icon.svg" style="margin-top: 1rem;"
+                                    alt="" srcset=""></a>
+                            <a target="_blank" rel="no-referrer" href="https://www.flipkart.com/snack-terminal-chocolate-pretzel/p/itm1f2dda7ec843a?pid=SNSG6WUKZAEHBA5Z "><img src="./dist/images/flipkart.png" alt="" srcset=""></a>
+                            <a target="_blank" rel="no-referrer" href="https://propshop24.com/products/pretzels-chocolate-dipped-100g-single-piece"><img src="./dist/images/propshop.webp" alt="" srcset=""></a>
+                            <a target="_blank" rel="no-referrer" href="https://yourhomefactory.com/product/pretzels-chocolate-dipped/"><img src="./dist/images/yhf.webp" style="filter:invert(1);"
+                                    alt="" srcset=""></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="product"><img src="dist/images/choco_dipped/product.png" alt=""></div>
+            <div class="buy-wrapper mob-only">
+                <div class="buy-title">
+                    <a href="#choco_dipped_popup" class="buy-now popup-btn">BUY NOW</a>
+                </div>
+            </div>
         </div>
         <div class="section" id="salt_sesame">
-            <div class="title"> <img src="dist/images/salt_sesame/title.png" alt="">
-                <div class="buy-wrapper">
-                    <a href="#" class="buy-now">BUY NOW</a>
+            <div class="title">
+                <img src="dist/images/salt_sesame/title.png" class="mob-hide" alt="">
+                <img src="dist/images/salt_sesame/title-phone.png" class="mob-only" alt="">
+                <div class="buy-wrapper mob-hide">
+                    <div class="buy-title">
+                        <a href="#salt_sesame_popup" class="buy-now popup-btn">BUY NOW</a>
+                    </div>
+                    <div id="salt_sesame_popup" class="mfp-hide popup">
+                        <p>
+                            Now Available At
+                        </p>
+                        <div class="links">
+
+                            <a target="_blank" rel="no-referrer" href="https://www.amazon.in/dp/B099MXXS9T?ref=myi_title_dp "><img src="./dist/images/am-icon.svg" style="margin-top: 1rem;"
+                                    alt="" srcset=""></a>
+                            <a target="_blank" rel="no-referrer" href=" https://www.flipkart.com/snack-terminal-salt-pretzel/p/itmf014a46c42017?pid=SNSG6TQWREZQJAW7 "><img src="./dist/images/flipkart.png" alt="" srcset=""></a>
+                            <a target="_blank" rel="no-referrer" href="https://propshop24.com/products/pretzels-salt-and-sesame-100g-single-piece"><img src="./dist/images/propshop.webp" alt="" srcset=""></a>
+                            <a target="_blank" rel="no-referrer" href="https://www.yourhomefactory.com/product/pretzels-salt-and-sesame/"><img src="./dist/images/yhf.webp" style="filter:invert(1);"
+                                    alt="" srcset=""></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="product"><img src="dist/images/salt_sesame/product.png" alt=""></div>
+            <div class="buy-wrapper mob-only">
+                <div class="buy-title">
+                    <a href="#salt_sesame_popup" class="buy-now popup-btn">BUY NOW</a>
+                </div>
+            </div>
         </div>
         <div class="section" id="choco_salted">
-            <div class="title"> <img src="dist/images/choco_salted/title.png" alt="">
-                <div class="buy-wrapper">
-                    <a href="#" class="buy-now">BUY NOW</a>
+            <div class="title">
+                <img src="dist/images/choco_salted/title.png" class="mob-hide" alt="">
+                <img src="dist/images/choco_salted/title-phone.png" class="mob-only" alt="">
+                <div class="buy-wrapper mob-hide">
+                    <div class="buy-title">
+                        <a href="#choco_salted_popup" class="buy-now popup-btn">BUY NOW</a>
+                    </div>
+                    <div id="choco_salted_popup" class="mfp-hide popup">
+                        <p>
+                            Now Available At
+                        </p>
+                        <div class="links">
+                            <a target="_blank" rel="no-referrer" href="https://www.amazon.in/dp/B099NCV84M?ref=myi_title_dp "><img src="./dist/images/am-icon.svg" style="margin-top: 1rem;"
+                                    alt="" srcset=""></a>
+                            <a target="_blank" rel="no-referrer" href="https://www.flipkart.com/snack-terminal-caramel-choco-pretzel/p/itm209d77c1acfd4?pid=SNSG6WVGFK8HXT4W "><img src="./dist/images/flipkart.png" alt="" srcset=""></a>
+                            <a target="_blank" rel="no-referrer" href="https://propshop24.com/products/pretzels-choco-salted-caramel-100g-single-piece"><img src="./dist/images/propshop.webp" alt="" srcset=""></a>
+                            <a target="_blank" rel="no-referrer" href=" https://yourhomefactory.com/product/pretzels-choco-salted-caramel/"><img src="./dist/images/yhf.webp" style="filter:invert(1);"
+                                    alt="" srcset=""></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="product"><img src="dist/images/choco_salted/product.png" alt=""></div>
+            <div class="buy-wrapper mob-only">
+                <div class="buy-title">
+                    <a href="#choco_salted_popup" class="buy-now popup-btn">BUY NOW</a>
+                </div>
+            </div>
         </div>
         <div class="section fp-auto-height">
             <footer id="footer">
@@ -147,7 +240,7 @@
                                     aria-hidden="true"></i></a>
                             <a href="https://www.instagram.com/snackterminal/"><i class="fa fa-instagram"
                                     aria-hidden="true"></i></a>
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <!-- <i class="fa fa-twitter" aria-hidden="true"></i> -->
                     </div>
                     <div>
                         <h4>Get In Touch</h4>
@@ -156,14 +249,14 @@
                                 href="mailto:info@snackterminal.com">info@snackterminal.com</a> </p>
                         <p><i class="fa fa-phone-alt" aria-hidden="true"></i><a href="tel:+">98989989999</a></p>
                     </div>
-                    <div>
+                    <div class="mob-hide">
                         <h4>Quick Links</h4>
                         <ul>
-                            <li> <a href="#">Home</a> </li>
-                            <li> <a href="#">What Are Pretzels?</a> </li>
-                            <li> <a href="#"> Contact Us</a> </li>
-                            <li> <a href="#">About Us</a> </li>
-                            <li> <a href="#">Buy Now</a> </li>
+                            <li> <a href="/index.html">Home</a> </li>
+                            <li> <a href="what-are-pretzels.html">What Are Pretzels?</a> </li>
+                            <li> <a href="contact.html"> Contact Us</a> </li>
+                            <li> <a href="about.html">About Us</a> </li>
+                            <li> <a href="buy-now.html">Buy Now</a> </li>
                         </ul>
                     </div>
                     <div>
@@ -174,7 +267,7 @@
                             <input type="submit" value="Subscribe">
                         </form>
                     </div>
-            
+
                 </div>
             </footer>
         </div>
@@ -182,6 +275,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script>
 
 
@@ -210,6 +307,15 @@
             $('#menu').toggleClass('open');
         });
 
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.popup-btn').magnificPopup({
+                type: 'inline',
+                midClick: true
+            });
+        })
     </script>
 </body>
 

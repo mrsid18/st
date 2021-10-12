@@ -1,0 +1,132 @@
+@mixin buy-title($color) {
+    color: $color;
+    background-color: white;
+    z-index: 999999;
+    position: relative;
+}
+
+@mixin after($image){
+    background: {
+        repeat:no-repeat;
+        size:cover;
+        image: url($image);
+        position: center;
+    }
+    z-index: 99;
+}
+
+@mixin bg($bg){
+    background: {
+        repeat:no-repeat;
+        size:cover;
+        image: url($bg);
+        position: center;
+    }
+    grid-template-rows: 3fr 5fr 1fr;
+    padding: 5vh 0;
+}
+
+@media only screen and (min-width: 550px) {
+    .mob-only{
+        display: none !important;
+    }
+    .mob-hide{
+        display: block;
+    }
+}
+@media only screen and (max-width: 550px) {
+    #menu .main-nav a {
+        font-size: 1.8rem;
+    }
+    #logo{
+        width: 18vw;
+    }
+    .mob-only{
+        display: block;
+    }
+    .mob-hide{
+        display: none !important;
+    }
+    .product img,
+    .title img {
+        width: 15rem;
+        margin: auto;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .container {
+        padding: 0 1.5rem;
+    }
+    #header .buy-now {
+        display: none;
+    }
+    #contact-us {
+        padding: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .buy-title .buy-now{
+        padding: 0.7rem 1rem;
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+
+    #cheese_herbs {
+        @include bg("../images/cheese_herbs/bgphone.png")
+       
+    }
+    #cheese_herbs .buy-title a{
+        @include buy-title(#3e274d)
+    }
+
+    #cheese_herbs::after {
+        @include after("../images/cheese_herbs/elements-phone.png")
+    }
+
+    #choco_dipped {
+        @include bg("../images/choco_dipped/bg-phone.png")
+    }
+    #choco_dipped .buy-title a{
+        @include buy-title(#752630)
+    }
+    #choco_dipped::after {
+        @include after("../images/choco_dipped/elements-phone.png")
+    }
+
+
+    #salt_sesame {
+        @include bg("../images/salt_sesame/bg-phone.png")
+    }
+    #salt_sesame .buy-title a{
+        @include buy-title(#006d69)
+    }
+    #salt_sesame::after {
+        @include after("../images/salt_sesame/elements-phone.png")
+    }
+
+
+    #choco_salted {
+        @include bg("../images/choco_salted/bg-phone.png")
+    }
+    #choco_salted .buy-title a{
+        @include buy-title(#2e2954)
+    }
+    #choco_salted::after {
+        @include after("../images/choco_salted/elements-phone.png")
+    }
+
+
+    .popup {
+        .links{
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 5rem;
+        }
+      }
+}

@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="dist/css/style.min.css">
     <link rel="stylesheet" href="dist/css/responsive.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
     <style>
-        .title,
-        .product {
-            visibility: hidden;
+        #navigation{
+            position: absolute;
         }
     </style>
     <script src="https://kit.fontawesome.com/ca462c3c72.js" crossorigin="anonymous"></script>
@@ -27,11 +28,11 @@
             <nav class="nav">
                 <div>
                     <a href="/">
-                        <img src="dist/images/logo.png" width="100" alt="">
+                        <img src="dist/images/logo.png" id="logo" width="100" alt="">
                         </a>
                 </div>
                 <div style="margin-left: auto;">
-                    <a href="#" class="buy-now" id="nav-buy">BUY NOW</a>
+                    <a href="buy-now.html" class="buy-now" id="nav-buy">BUY NOW</a>
                     <button class="toggle-menu">
                         <span></span>
                     </button>
@@ -43,7 +44,7 @@
             <nav class="main-nav">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="buy-now.html">
                             Buy Now
                         </a>
                     </li>
@@ -86,12 +87,12 @@
                                 Facebook
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#">
                                 <i class="fa fa-envelope fa-fw"></i>
                                 Subscribe
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
             </footer>
@@ -106,33 +107,34 @@
         <section>
             <div class="container roboto">
                 <div id="contact-us">
-                    <form action="">
+                    <form action="https://snackterminal.us6.list-manage.com/subscribe/post?u=57d50da99a2057eb2d854f2d8&amp;id=977e8f8b1d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+                    <!-- <form action=""> -->
                         <div class="form-control">
                             <label for="type">Are you a?</label>
                             <label for="type">
-                            <input type="radio" name="type" id="type" value="Business">Business</label>
+                            <input type="radio" name="TYPE" id="type" value="Business">Business</label>
                             <label for="Individual">
-                            <input type="radio" name="type" id="Individual" value="Individual">Individual</label>
+                            <input type="radio" name="TYPE" id="Individual" value="Individual">Individual</label>
                         </div>
                         <div class="form-control">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Jack Snyder" required>
+                            <label for="mce-NAME">Name</label>
+                            <input type="text" name="NAME" id="mce-NAME" placeholder="Jack Snyder" required>
                         </div>
                         <div class="form-control">
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email" placeholder="jack@gmail.com" required>
+                            <label for="mce-EMAIL">Email</label>
+                            <input type="text" name="EMAIL" id="mce-EMAIL" placeholder="jack@gmail.com" required>
                         </div>
                         <div class="form-control">
-                            <label for="mobile">Mobile</label>
-                            <input type="text" name="mobile" id="mobile" placeholder="9898126876" required>
+                            <label for="mce-PHONE">Mobile</label>
+                            <input type="text" name="PHONE" id="mce-PHONE" placeholder="9898126876" required>
                         </div>
                         <div class="form-control">
-                            <label for="designation">Designation (If Business)</label>
-                            <input type="text" name="designation" id="designation" placeholder="CEO">
+                            <label for="mce-DESIG">Designation (If Business)</label>
+                            <input type="text" name="DESIG" id="mce-DESIG" placeholder="CEO">
                         </div>
                         <div class="form-control">
-                            <label for="query">Query</label>
-                            <select name="query" id="query">
+                            <label for="mce-Query">Query</label>
+                            <select name="QUERY" id="mce-Query">
                                 <option value="Feedback">Feedback</option>
                                 <option value="Product Enquiry">Product Enquiry</option>
                                 <option value="dealership">Dealership / Distributorship information</option>
@@ -140,14 +142,19 @@
                             </select>
                         </div>
                         <div class="form-control">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="I loved Cheese Herbs Pretzels !!">
+                            <label for="mce-MESSAGE">Message</label>
+                            <textarea name="MESSAGE" id="mce-MESSAGE" cols="30" rows="10" placeholder="I loved Cheese Herbs Pretzels !!">
 
                             </textarea>
                         </div>
                         <div class="form-control">
-                            <input type="submit" value="Submit">
+                            <input type="submit" value="SUBMIT" name="subscribe" id="mc-embedded-subscribe">
                         </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>   
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_57d50da99a2057eb2d854f2d8_977e8f8b1d" tabindex="-1" value=""></div> 
                     </form>
                 </div>
             </div>
@@ -166,7 +173,7 @@
                         aria-hidden="true"></i></a>
                 <a href="https://www.instagram.com/snackterminal/"><i class="fa fa-instagram"
                         aria-hidden="true"></i></a>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <!-- <i class="fa fa-twitter" aria-hidden="true"></i> -->
         </div>
         <div>
             <h4>Get In Touch</h4>
@@ -178,11 +185,11 @@
         <div>
             <h4>Quick Links</h4>
             <ul>
-                <li> <a href="#">Home</a> </li>
-                <li> <a href="#">What Are Pretzels?</a> </li>
-                <li> <a href="#"> Contact Us</a> </li>
-                <li> <a href="#">About Us</a> </li>
-                <li> <a href="#">Buy Now</a> </li>
+                <li> <a href="/index.html">Home</a> </li>
+                <li> <a href="what-are-pretzels.html">What Are Pretzels?</a> </li>
+                <li> <a href="contact.html"> Contact Us</a> </li>
+                <li> <a href="about.html">About Us</a> </li>
+                <li> <a href="buy-now.html">Buy Now</a> </li>
             </ul>
         </div>
         <div>
@@ -196,10 +203,9 @@
 
     </div>
 </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='NAME';ftypes[1]='text';fnames[7]='TYPE';ftypes[7]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[2]='DESIG';ftypes[2]='text';fnames[5]='QUERY';ftypes[5]='text';fnames[6]='MESSAGE';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
         <script src="dist/js/navigation.js"></script>
-
 </body>
 
 </html>
