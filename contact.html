@@ -21,6 +21,11 @@
         #navigation {
             position: absolute;
         }
+        .required{
+            color:red;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
     </style>
     <script src="https://kit.fontawesome.com/ca462c3c72.js" crossorigin="anonymous"></script>
      <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -124,22 +129,22 @@
                         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
                         <!-- <form action=""> -->
                         <div class="form-control">
-                            <label for="type">Are you a?</label>
+                            <label for="type">Are you a? <span class="required">*</span></label>
                             <label for="type">
                                 <input type="radio" name="TYPE" id="type" value="Business">Business</label>
                             <label for="Individual">
-                                <input type="radio" name="TYPE" id="Individual" value="Individual">Individual</label>
+                                <input type="radio" name="TYPE" id="Individual" value="Individual" checked="checked">Individual</label>
                         </div>
                         <div class="form-control">
-                            <label for="mce-NAME">Name</label>
+                            <label for="mce-NAME">Name <span class="required">*</span></label>
                             <input type="text" name="NAME" id="mce-NAME" placeholder="Jack Snyder" required>
                         </div>
                         <div class="form-control">
-                            <label for="mce-EMAIL">Email</label>
+                            <label for="mce-EMAIL">Email <span class="required">*</span></label>
                             <input type="text" name="EMAIL" id="mce-EMAIL" placeholder="jack@gmail.com" required>
                         </div>
                         <div class="form-control">
-                            <label for="mce-PHONE">Mobile</label>
+                            <label for="mce-PHONE">Mobile <span class="required">*</span></label>
                             <input type="text" name="PHONE" id="mce-PHONE" placeholder="9898126876" required>
                         </div>
                         <div class="form-control">
