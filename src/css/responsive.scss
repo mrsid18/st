@@ -129,4 +129,26 @@
             width: 5rem;
         }
       }
+
+      .about-content.reverse{
+          .image{
+              order:0
+          }
+      }
+      .about-content{
+        grid-template-columns: 1fr;
+        place-items: initial;
+        // .image{
+        //       max-width: 320px;
+        //   }
+        //   .content{
+        //       p{
+        //           word-wrap: break-word;
+        //       }
+        //       h1{
+        //           max-width: 80%;
+        //           word-wrap: break-word;
+        //       }
+        //     }
+      }
 }
